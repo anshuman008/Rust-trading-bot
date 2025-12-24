@@ -1,0 +1,16 @@
+[package]
+name = "trading-bot-rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+solana-sdk = "2.1"
+solana-client = "2.1"
+spl-token = "7.0"
+spl-token-2022 = "6.0"
+spl-associated-token-account = "6.0"
+once_cell = "1.19"
+lazy_static = "1.5"
+bs58 = "0.5"
+tokio = { version = "1.41", features = ["full"] }
+anyhow = "1.0"
