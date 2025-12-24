@@ -6,7 +6,7 @@ use solana_client::rpc_client::RpcClient;
 use solana_sdk::{native_token::LAMPORTS_PER_SOL, pubkey::Pubkey};
 use std::str::FromStr;
 
-fn test_calculations() {
+fn test_trade() {
     let rpc = RpcClient::new("https://api.mainnet-beta.solana.com".to_string());
     
     let mint = Pubkey::from_str("Ar4vi1BZXHVgQFRYD8AF7rBe7gsh3D1nM2hZG153pump").unwrap();
@@ -76,9 +76,7 @@ fn test_calculations() {
 
 fn main() {
     println!("Starting Pump.fun Trading Bot...\n");
-
-    // Test calculations
-    test_calculations();
+   test_trade();
 
     // Run sell
     // if let Err(e) = pump_sell::run_pump_sell() {
